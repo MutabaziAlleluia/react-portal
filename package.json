@@ -1,0 +1,23 @@
+{
+  "name": "@mutabazia/react-portal",
+  "version": "1.0.0",
+  "description": "React Context-based Portal",
+  "main": "dist/index.js",
+  "types": "typings/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alleluia M.",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "typescript": "^5.1.5"
+  }
+}

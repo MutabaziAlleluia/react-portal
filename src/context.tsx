@@ -1,5 +1,5 @@
 import React from "react";
-import type { PortalContextType } from "./types";
+import type { PortalContextType } from "../types";
 
 // create the context
 const PortalContext = React.createContext<PortalContextType>({

@@ -1,9 +1,12 @@
 import React from "react";
 import PortalContext from "./context";
-import { PortalProps } from "../typings";
+import type { PlaceholderProps } from "../typings";
 
-// create the portal
-const Portal: React.FC<PortalProps> = ({ id, renderItem = (item) => item }) => {
+// create the portal placeholder
+const PortalPlaceholder: React.FC<PlaceholderProps> = ({
+  id,
+  renderItem = (item) => item,
+}) => {
   // get the portal context
   const { register, unregister } = React.useContext(PortalContext);
 
@@ -20,4 +23,4 @@ const Portal: React.FC<PortalProps> = ({ id, renderItem = (item) => item }) => {
   return <div ref={ref} />;
 };
 
-export default Portal;
+export default PortalPlaceholder;

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { PortalElementProps } from "../typings";
+import type { PortalElementProps } from "../typings";
 import PortalContext from "./context";
 
 // create the portal element

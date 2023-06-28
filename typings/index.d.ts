@@ -9,22 +9,22 @@ export type PortalContextType = {
   unregister: (id: string) => void;
 };
 
-export interface PortalProviderProps {
+export type PortalProviderProps = {
   children: React.ReactNode;
-}
+};
 
-export interface PortalElementProps {
+export type PortalElementProps = {
   id: string;
   children: React.ReactNode;
-}
+};
 
-export interface PortalProps {
+export type PlaceholderProps = {
   id: string;
   renderItem?: RenderItemType;
-}
+};
 
-export type PortalType = React.FC<PortalProps> & {
+export type PortalType = React.FC<PortalElementProps> & {
   Context: React.Context<PortalContextType>;
-  Element: React.FC<PortalElementProps>;
+  Placeholder: React.FC<PlaceholderProps>;
   Provider: React.FC<PortalProviderProps>;
 };

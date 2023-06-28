@@ -1,13 +1,13 @@
-import { PortalType } from "../typings";
-import __Portal from "./Portal";
+import type { PortalType } from "../typings";
 import PortalElement from "./PortalElement";
+import PortalPlaceholder from "./PortalPlaceholder";
 import PortalProvider from "./Provider";
 import PortalContext from "./context";
 
-const Portal = __Portal as PortalType;
+const Portal = PortalElement as PortalType;
 
 Portal.Context = PortalContext;
-Portal.Element = PortalElement;
+Portal.Placeholder = PortalPlaceholder;
 Portal.Provider = PortalProvider;
 
 export default Portal;

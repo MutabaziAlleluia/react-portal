@@ -28,3 +28,7 @@ export type PortalType = React.FC<PortalElementProps> & {
   Placeholder: React.FC<PlaceholderProps>;
   Provider: React.FC<PortalProviderProps>;
 };
+
+declare const Portal: PortalType;
+
+export default Portal;

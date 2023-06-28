@@ -1,4 +1,4 @@
-import type { PortalType } from "../typings";
+import type { PortalType } from "./types";
 import PortalElement from "./PortalElement";
 import PortalPlaceholder from "./PortalPlaceholder";
 import PortalProvider from "./Provider";

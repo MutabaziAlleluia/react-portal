@@ -1,6 +1,6 @@
 import React from "react";
 import PortalContext from "./context";
-import type { PlaceholderProps } from "../typings";
+import type { PlaceholderProps } from "./types";
 
 // create the portal placeholder
 const PortalPlaceholder: React.FC<PlaceholderProps> = ({

@@ -1,11 +1,12 @@
 import React from "react";
 import PortalContext from "./context";
-import type { PlaceholderProps } from "../types";
+import type { PlaceholderProps } from "./types";
 
 // create the portal placeholder
 const PortalPlaceholder: React.FC<PlaceholderProps> = ({
   id,
   renderItem = (item) => item,
+  className,
 }) => {
   // get the portal context
   const { register, unregister } = React.useContext(PortalContext);
@@ -15,12 +16,23 @@ const PortalPlaceholder: React.FC<PlaceholderProps> = ({
 
   // register the portal ref
   React.useEffect(() => {
-    register(id, ref, renderItem);
+    if (ref.current) {
+      register(id, ref.current, renderItem);
+    }
+
     return () => unregister(id);
-  }, [id, renderItem, register, unregister]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id, ref.current]);
 
   // render the portal
-  return <div ref={ref} />;
+  return (
+    <div
+      className={[`portal-placeholder-${id}`, className]
+        .filter((c) => Boolean(c))
+        .join(" ")}
+      ref={ref}
+    />
+  );
 };
 
 export default PortalPlaceholder;

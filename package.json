@@ -1,9 +1,9 @@
 {
   "name": "@mutabazia/react-portal",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "React Context-based Portal",
   "main": "dist/index.js",
-  "types": "types/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,19 +15,25 @@
     "react-portal",
     "react-context-portal"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MutabaziAlleluia/react-portal.git"
+  },
   "author": "Alleluia M.",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/MutabaziAlleluia/react-portal/issues"
   },
   "homepage": "https://github.com/MutabaziAlleluia/react-portal#readme",
-  "dependencies": {
+  "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "typescript": "^5.1.5"
   }
 }

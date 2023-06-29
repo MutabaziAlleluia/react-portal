@@ -1,11 +1,15 @@
 import * as React from "react";
 
-export type RefType = React.RefObject<HTMLDivElement>;
 export type RenderItemType = (item: React.ReactNode) => React.ReactNode;
+
 export type PortalContextType = {
-  refs: { [key: string]: RefType };
+  refs: { [key: string]: HTMLDivElement };
   renderItems: { [key: string]: RenderItemType };
-  register: (id: string, ref: RefType, renderItem: RenderItemType) => void;
+  register: (
+    id: string,
+    ref: HTMLDivElement,
+    renderItem: RenderItemType
+  ) => void;
   unregister: (id: string) => void;
 };
 
@@ -21,6 +25,7 @@ export type PortalElementProps = {
 export type PlaceholderProps = {
   id: string;
   renderItem?: RenderItemType;
+  className?: string;
 };
 
 export type PortalType = React.FC<PortalElementProps> & {
@@ -30,5 +35,4 @@ export type PortalType = React.FC<PortalElementProps> & {
 };
 
 declare const Portal: PortalType;
-
 export default Portal;

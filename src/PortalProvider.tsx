@@ -1,5 +1,5 @@
 import React from "react";
-import type { PortalContextType, PortalProviderProps } from "../types";
+import type { PortalContextType, PortalProviderProps } from "./types";
 import PortalContext from "./context";
 
 // create the provider

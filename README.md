@@ -97,6 +97,7 @@ This component serves as a portal target. It takes an **id** prop which is used 
 
 - **id**: A unique identifier for the portal.
 - **renderItem** (optional): A function to customize how the portal content is rendered.
+- **className** (optional): A string to customize the placeholder's **className**
 
 ### Portal
 

@@ -1,6 +1,6 @@
 {
   "name": "@mutabazia/react-portal",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "React Context-based Portal",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

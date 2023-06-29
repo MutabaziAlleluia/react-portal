@@ -25,10 +25,6 @@
     "url": "https://github.com/MutabaziAlleluia/react-portal/issues"
   },
   "homepage": "https://github.com/MutabaziAlleluia/react-portal#readme",
-  "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
   "devDependencies": {
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
